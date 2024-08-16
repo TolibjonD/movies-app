@@ -10,6 +10,10 @@ const MovieAddForm = ({addForm}) => {
 
     const addMoviesHandler = e => {
         e.preventDefault();
+        if (state.name === '' || state.views === '') {
+            alert("Empty data cannot be added !")
+            return
+        }
         const data = { name: state.name, views: state.views }
         addForm(data)
         setState({name: '', views: ''})
