@@ -1,0 +1,11 @@
+.search-input {
+    padding: 1.3rem;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 7px 7px 30px rgba(130, 130, 130, 0.683);
+    transition: all .2s ease-in-out;
+}
+
+.search-input:focus {
+    background-color: #f3eeee;
+}
