@@ -6,7 +6,7 @@ const SearchPanel = (props)  => {
 
     const updateTermHandler = (e) => {
         const term = e.target.value
-        setTerm({ term })
+        setTerm(term)
         props.updateTermHandler(term)
     }
 
